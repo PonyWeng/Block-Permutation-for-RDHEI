@@ -14,5 +14,3 @@ There are 65536 blocks in the image, this code shffule all the 2x2 block using a
 * Change the image path to the image that you want to encrypt.
 * Run the code.
 * Get the encrypted or decrypted image.
-
-* 
