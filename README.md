@@ -1,16 +1,24 @@
 # Block Permutation Tool
 ## Description:
-Block permutation is a useful tool to encrypt the image by permutate the image blocks using a pseudo-random key. This code is for the people who studies in Rerversible Data Hiding in Encrypted Image (RDHEI).
+Block Permutation Tool is designed to encrypt images by rearranging image blocks using a pseudo-random permutation key. It is particularly useful for researchers working on Reversible Data Hiding in Encrypted Images (RDHEI).
 
+## Key Features
 * Image size: 512x512 grayscale image
-* Block size: 2x2
-* Sender: Shffule all the blocks to encrypt the image by the encryption key
-* Receiver: Refuule all the blocks to decrypt the encrpyed image to the original image.
+* Block size: 2x2 pixels
+* Sender: Shuffle all 2x2 blocks in the image using an encryption key.
+* Receiver: Use the same encryption key to reverse the permutation and recover the original image.
 
-There are 65536 blocks in the image, this code shffule all the 2x2 block using a encryption key then gereante an encrypted image, then the receiver is able to use the same permutation key to reshuffle the block (decryption) to recover the image.
+This tool divides the image into 65536 blocks and applies a pseudo-random permutation based on the provided encryption key to generate an encrypted image. The receiver can then use the same key to decrypt and restore the image.
 
 ## Usage 
 
-* Change the image path to the image that you want to encrypt.
+* Change the image path in the script to the image you want to encrypt.
 * Run the code.
-* Get the encrypted or decrypted image.
+* Obtain the encrypted or decrypted image.
+
+## Example
+`python block_permutation.py`
+
+## Note
+* Ensure that the input image is in 512x512 grayscale format.
+* The same encryption key must be used for both encryption and decryption.
